@@ -1,0 +1,24 @@
+{
+  "name": "oquetuquer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all -p nodemon browsersync",
+    "nodemon": "nodemon index.js",
+    "browsersync": "browser-sync start --proxy http://localhost:5000 --files ['public', 'views']"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "pg": "^8.2.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "npm-run-all": "^4.1.5"
+  }
+}
